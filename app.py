@@ -31,4 +31,24 @@ if user_input:
 
         except Exception as e:
             st.error(f"Oh geez Rick! : {e}")
+# end of OpenAI Logic
+
+# start of matplot logic
+import matplotlib.pyplot as plt
+import numpy as np
+
+st.subheader("Mood Tracker")
+
+# Fake data – you can update this later with real user data
+days = np.array(["Mon", "Tue", "Wed", "Thu", "Fri"])
+mood_scores = np.array([6, 7, 5, 8, 9])  # Example: 1-10 mood rating
+
+fig, ax = plt.subplots()
+ax.plot(days, mood_scores, marker='o', linestyle='-', color='blue')
+ax.set_title("Mood Over the Week")
+ax.set_xlabel("Day")
+ax.set_ylabel("Mood Level")
+
+st.pyplot(fig)
+
 
