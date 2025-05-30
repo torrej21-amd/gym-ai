@@ -6,7 +6,7 @@ import os
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # Streamlit UI
-st.title("Gym AI Assistant 💪")
+st.title("Gym Bro 💪")
 st.subheader("Powered by GPT")
 
 user_input = st.text_input("Share your feelings with me :)")
@@ -33,6 +33,8 @@ if user_input:
             st.error(f"Oh geez Rick! : {e}")
 # end of OpenAI Logic
 
+#----------------------end------
+
 # start of matplot logic
 import matplotlib.pyplot as plt
 import numpy as np
@@ -50,5 +52,19 @@ ax.set_xlabel("Day")
 ax.set_ylabel("Mood Level")
 
 st.pyplot(fig)
+
+#-------------------end-------
+
+#tensor flow logic (logic testing. will rebuild properly later)
+
+import tensorflow as tf
+
+st.subheader("TensorFlow Test ✅")
+
+# Simple test: create a constant tensor
+tensor = tf.constant([[1, 2], [3, 4]])
+st.write("TensorFlow constant tensor:")
+st.write(tensor)
+
 
 
