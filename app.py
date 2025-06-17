@@ -1,5 +1,7 @@
 import streamlit as st
 from openai import OpenAI
+
+
 import os
 
 # Use secure method to load your API key
@@ -68,3 +70,15 @@ st.write(tensor)
 
 
 
+# Kaggle data logic
+
+import pandas as pd
+
+#loading data set
+
+df = pd.read_csv("data/gym_members_exercise_tracking.csv")
+
+#print first few rows 
+
+st.subheader("Sample Kaggle Dataset")
+st.write(df.head())
