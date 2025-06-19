@@ -20,4 +20,5 @@ Development: Early-stage (V1 nearly complete)
 Storage: No persistent backend yet (CSV input/output; future DB support planned)
 Goal: Fully AI-powered gym assistant that adapts to each user’s journey
 
+Contact Info: Email: JosetorresJr91@gmail.com Linkdin: https://www.linkedin.com/in/jose-torres-2a5485271/ 
 
